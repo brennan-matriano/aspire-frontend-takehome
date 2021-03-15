@@ -1,0 +1,232 @@
+// app global css in Sass form
+
+@font-face
+    font-family: "Avenir Next"
+    src: url("./fonts/avenir-next-regular.woff") format("woff")
+    font-style: normal
+    font-weight: 400
+
+
+@font-face
+    font-family: "Avenir Next"
+    src: url("./fonts/avenir-next-medium.woff") format("woff")
+    font-style: normal
+    font-weight: 500
+
+
+@font-face
+    font-family: "Avenir Next"
+    src: url("./fonts/avenir-next-demibold.woff") format("woff")
+    font-style: normal
+    font-weight: 600
+
+
+@font-face
+    font-family: "Avenir Next"
+    src: url("./fonts/avenir-next-bold.woff") format("woff")
+    font-style: normal
+    font-weight: 700
+
+
+.bg-background
+    background-color: $background
+
+.text-demibold
+    font-weight: 600
+
+.text-caption
+    font-size: 14px
+
+.text-tiny
+    font-size: 0.5rem
+
+.flex
+    display: flex
+
+body
+    font-family: "Avenir Next", "sans-serif"
+
+.brand_logo
+    width: 7.8rem
+
+.spiel
+    opacity: 30%
+    font-weight: normal
+
+
+
+.q-item__section--avatar
+    min-width: unset
+
+
+#main-layout__header
+    left: 340px !important
+    background-color: $light
+    color: $dark
+    padding-bottom: 20px
+
+#main-layout__footer
+    z-index: 4000
+
+.q-drawer
+    width: 340px !important
+
+.q-page-container
+    padding-left: 340px !important
+
+.q-linear-progress__track
+    background-color: $border
+
+.currency-flag
+    border-radius: 4px
+    background-color: $secondary
+    width: fit-content
+    padding: 0.5px 10px
+    color: $light
+    font-weight: bold
+    margin: 4px 0 4px 0
+    height: 1.5rem
+
+.debit-card__container
+    padding-bottom: 50%
+    width: 100%
+    background-color: $secondary
+    position: relative
+    box-sizing: border-box
+    border-radius: 1rem
+
+.debit-card__content
+    position: absolute
+    top: 0
+    bottom: 0 
+    left: 0
+    right: 0
+
+.aspire-progressbar
+    border-radius: 2rem
+
+
+.cashback-timer__container
+    background-color: $background
+    border: 1px solid $border
+    border-radius: 1rem
+
+
+.q-circular-progress__circle
+    color: $primary
+
+.q-circular-progress__track
+    color: $border
+
+.q-circular-progress__text
+    flex-direction: column
+
+.q-toggle__track    
+    height: 21px
+    border-radius: 4rem
+    width: 0.9em
+
+.q-toggle__thumb
+    top: 0.38em
+    width: 0.4em
+    height: 0.4em
+    left: 0.32em
+
+.q-toggle__inner--truthy .q-toggle__thumb
+    left: 0.8em
+
+.q-toggle__thumb:after
+    box-shadow: none
+
+.debit-card__wrapper
+    max-width: 366px        
+
+.debit-card__button
+    position: relative
+    top: -10px
+    left: -10px
+    z-index: 3000
+
+.debit-card__row
+    height: 20%
+
+.debit-card__censored-card-number
+    font-size: 0.7rem
+
+.debit-card__options
+    .q-item
+        padding-left: 0
+        padding-right: 0
+
+.aspire-button 
+    min-height: 2.5rem
+    font-size: 14px
+    border-radius: 2rem
+    box-shadow: 0 2px 6px rgb(0 0 0 / 10%)
+
+.aspire-button--cta
+    width: 18.75rem
+    max-width: 100%
+    min-height: 3.5rem
+    font-size: 1rem
+
+
+.q-field__control
+    color: $secondary
+
+@media screen and (min-width: $breakpoint-md-max)
+    .q-drawer
+        width: 500px !important
+
+    .q-page-container
+        padding-left: 500px !important
+
+    #main-layout__header
+        left: 500px !important
+
+
+@media screen and (max-width:  $breakpoint-sm-max)
+    #main-layout__header
+        left: 0px !important
+        background-color: $primary
+        color: $light
+        padding-bottom: 6rem
+        padding-left: 1.5rem
+        padding-right: 1.5rem
+
+    #main-layout__content
+        margin-top: -2rem
+        background-color: $light
+        border-radius: 1.5rem 1.5rem 0px 0px
+        z-index: 3000
+        padding-left: 1.5rem
+        padding-right: 1.5rem
+
+
+    .router-card__content
+        padding: 0
+    
+    .router-card
+        padding: 0
+
+
+    .q-page-container
+        padding-left: 0px !important
+
+    .router-card
+        border: none
+        box-shadow: none
+
+    .debit-card__container
+        margin: -3rem auto 0 auto
+
+    .debit-card__wrapper
+        max-width: 366px
+        margin: auto
+
+    .debit-card__options
+        padding-left: 0
+        padding-right: 0
+    
+    .form-action
+        justify-content: center
