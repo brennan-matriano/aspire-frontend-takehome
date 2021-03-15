@@ -1,6 +1,12 @@
+Routes
+
+/#/debit      : CSS Challenge
+/#/credit     : Loans Challenge
+
+
 # Quasar App (loans)
 
-A Quasar Framework app
+A Quasar Framework app by Brennan Matriano for Aspire's Frontend Code Assessment
 
 ## Install the dependencies
 ```bash
@@ -24,3 +30,4 @@ quasar build
 
 ### Customize the configuration
 See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+
